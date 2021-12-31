@@ -1,10 +1,23 @@
 import logo from './logo.svg';
+import illustrationintro from './illustration-intro.png';
+import accessanywhere from './icon-access-anywhere.svg';
+import security from './icon-security.svg';
+import collab from './icon-collaboration.svg';
+import anyfile from './icon-any-file.svg';
+import productive from './illustration-stay-productive.png';
+import profile1 from "./profile-1.jpg";
+import profile2 from "./profile-2.jpg";
+import profile3 from "./profile-3.jpg";
+import location from "./icon-location.svg";
+import phone from "./icon-phone.svg";
+import email from "./icon-email.svg";
+
 import './App.css';
 
 function Header() {
   return (
     <header>
-      <img src="/logo.svg" alt="Fylo" className="header-logo" />
+      <img src={logo} alt="Fylo" className="header-logo" />
       <nav>
         <ul>
           <li className="head">Features</li>
@@ -20,7 +33,7 @@ function Illustration() {
   return (
     <div className="illustration-container">
       <div className="illustration">
-        <img src="/illustration-intro.png" />
+        <img src={illustrationintro} />
       </div>
       <div className="illustration-heading">
         <h1>All your files in one secure location, accessible anywhere.</h1>
@@ -56,22 +69,22 @@ function AdvantageList() {
     <div className="adv-l">
       <div className="advantage-list-container">
         <Advantage
-          img="/icon-access-anywhere.svg"
+          img={accessanywhere}
           heading="Access your files, anywhere"
           text="The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere."
         />
         <Advantage
-          img="/icon-security.svg"
+          img={security}
           heading="Security you can trust"
           text="2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files."
         />
         <Advantage
-          img="/icon-collaboration.svg"
+          img={collab}
           heading="Real-time collaboration"
           text="Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required."
         />
         <Advantage
-          img="/icon-any-file.svg"
+          img={anyfile}
           heading="Store any time of file"
           text="Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared."
         />
@@ -84,7 +97,7 @@ function AdvantagesConclusion() {
   return (
     <div className="adv-conc-container">
       <div className="adv-conc-illustration">
-        <img src="/illustration-stay-productive.png" />
+        <img src={productive} />
       </div>
       <div className="adv-conc-text-container">
         <div className="adv-conc-heading">
@@ -128,19 +141,19 @@ function QuoteList() {
     <div className="quote-list-container">
       <Quote
       text="Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine."
-      img="/profile-1.jpg"
+      img={profile1}
       name="Satish Patel"
       title="Founder & CEO, Huddle"
     />
     <Quote
       text="Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine."
-      img="/profile-2.jpg"
+      img={profile2}
       name="Bruce McKenzie"
       title="Founder & CEO, Huddle"
     />
     <Quote
       text="Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine."
-      img="/profile-3.jpg"
+      img={profile3}
       name="Iva Boyd"
       title="Founder & CEO, Huddle"
     />
@@ -187,20 +200,20 @@ function Footer() {
     <footer>
       <SubscribeBox />
       <div className="footer-svg-container">
-        <img src="/logo.svg" />
+        <img src={logo} />
       </div>
       <div className="footer-large">
         <ContactInfo
-          img="/icon-location.svg"
+          img={location}
           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
         />
         <div className="contact-large">
           <ContactInfo
-            img="/icon-phone.svg"
+            img={phone}
             text="+1-543-123-4567"
           />
           <ContactInfo
-            img="/icon-email.svg"
+            img={email}
             text="example@fylo.com"
           />
         </div>
